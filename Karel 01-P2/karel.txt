@@ -1,4 +1,5 @@
 iniciar-programa
+{Samuel Bejar Viveros}
     define-nueva-instruccion gira-derecha como
     	inicio
         	gira-izquierda;
