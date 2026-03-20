@@ -1,0 +1,164 @@
+iniciar-programa
+{Samuel Bejar Viveros}
+    define-nueva-instruccion gira-derecha como
+    	inicio
+        	gira-izquierda;
+        	gira-izquierda;
+        	gira-izquierda;
+        fin;
+        
+    define-nueva-instruccion media-vuelta como
+    	inicio
+        	gira-izquierda;
+        	gira-izquierda;
+        fin;
+    
+    define-nueva-instruccion dibuja-b como
+    	inicio
+        	repetir 8 veces
+            	si no-junto-a-zumbador entonces
+                	inicio
+                    	deja-zumbador;
+                    	avanza;
+                	fin;
+    	gira-derecha;
+    	deja-zumbador;
+         	repetir 3 veces
+            	si no-junto-a-zumbador entonces
+                	inicio
+                    	deja-zumbador;
+                    	avanza;
+                	fin
+                sino
+                	inicio
+                    	avanza;
+                    	deja-zumbador;
+                    fin;
+    	avanza;
+    	gira-derecha;
+        avanza;
+         	repetir 3 veces
+            	si no-junto-a-zumbador entonces
+                	inicio
+                    	deja-zumbador;
+                    	avanza;
+                	fin
+                sino
+                	inicio
+                    	avanza;
+                    	deja-zumbador;
+                    fin;
+        gira-derecha;
+        avanza;
+         	repetir 3 veces
+            	si no-junto-a-zumbador entonces
+                	inicio
+                    	deja-zumbador;
+                    	avanza;
+                	fin
+                sino
+                	inicio
+                    	avanza;
+                    	deja-zumbador;
+                    fin;
+        media-vuelta;
+        	repetir 4 veces
+            	inicio
+                	avanza;
+            	fin;
+        gira-derecha;
+        avanza;
+         	repetir 3 veces
+            	si no-junto-a-zumbador entonces
+                	inicio
+                    	deja-zumbador;
+                    	avanza;
+                	fin
+                sino
+                	inicio
+                    	avanza;
+                    	deja-zumbador;
+                    fin;
+        gira-derecha;
+        avanza;
+         	repetir 3 veces
+            	si no-junto-a-zumbador entonces
+                	inicio
+                    	deja-zumbador;
+                    	avanza;
+                	fin
+                sino
+                	inicio
+                    	avanza;
+                    	deja-zumbador;
+                    fin;
+        media-vuelta;
+        	repetir 7 veces
+            	inicio
+                	avanza;
+            	fin;        
+        gira-izquierda;
+        	repetir 8 veces
+            	inicio
+                	avanza;
+            	fin;    
+        gira-derecha;
+        avanza;
+        gira-derecha;
+        fin;
+    define-nueva-instruccion dibuja-v como
+    	inicio                
+        	repetir 6 veces
+            	si no-junto-a-zumbador entonces
+                	inicio
+                    	deja-zumbador;
+                    	avanza;
+                	fin
+                sino
+                	inicio
+                    	avanza;
+                    	deja-zumbador;
+                    fin;
+            repetir 3 veces
+            	si no-junto-a-zumbador entonces
+                	inicio
+                    	gira-izquierda;
+                        avanza;
+                        deja-zumbador;
+                        gira-derecha;
+                        avanza;
+                    fin;
+        media-vuelta;
+        avanza;
+        gira-derecha;
+        avanza;
+            repetir 3 veces
+            	si no-junto-a-zumbador entonces
+                	inicio
+                    	gira-izquierda;
+                        avanza;
+                        deja-zumbador;
+                        gira-derecha;
+                        avanza;
+                    fin;
+        media-vuelta;
+        avanza;
+        gira-derecha;
+            repetir 5 veces
+            	si no-junto-a-zumbador entonces
+                	inicio
+                    	deja-zumbador;
+                    	avanza;
+                	fin
+                sino
+                	inicio
+                    	avanza;
+                    	deja-zumbador;
+                    fin;
+        fin;            
+    inicia-ejecucion
+    dibuja-b;
+    dibuja-v;
+        apagate;
+    termina-ejecucion
+finalizar-programa
