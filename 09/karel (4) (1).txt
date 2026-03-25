@@ -1,0 +1,14 @@
+iniciar-programa 
+	define-nueva-instruccion gira(r) como
+    	inicio
+        	repetir r veces
+            	inicio
+                	gira-izquierda;
+                fin; 
+        fin;
+        
+    inicia-ejecucion
+    gira(20000);
+        apagate;
+    termina-ejecucion
+finalizar-programa
